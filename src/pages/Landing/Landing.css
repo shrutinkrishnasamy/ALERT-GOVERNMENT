@@ -1,0 +1,615 @@
+/* NDMA Style Theme Colors */
+:root {
+  --ndma-dark-blue: #1C4E80;
+  --ndma-light-blue: #2365A3;
+  --ndma-yellow: #FFDE00;
+  --ndma-text-dark: #333333;
+  --ndma-bg-grey: #F5F5F5;
+  --ndma-border: #E0E0E0;
+}
+
+.landing-page {
+  font-family: 'Noto Sans', 'Noto Sans Tamil', sans-serif;
+  color: var(--ndma-text-dark);
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/* --- Top Bar --- */
+.ndma-top-bar {
+  background-color: white;
+  border-bottom: 1px solid var(--ndma-border);
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  height: 35px;
+}
+
+.top-bar-left, .top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-bar-left span {
+  font-weight: 500;
+}
+
+.font-sizers {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.font-sizers span {
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.language-selector {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.language-selector span {
+  cursor: pointer;
+}
+
+.language-selector span.active {
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  height: 25px;
+}
+
+.search-container input {
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.search-container button {
+  background-color: var(--ndma-light-blue);
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+  font-weight: bold;
+}
+
+/* --- Logo Bar --- */
+.ndma-logo-bar {
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-logo-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--ndma-dark-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.logo-text h1 {
+  font-size: 1.8rem;
+  margin: 0 0 5px 0;
+  color: var(--ndma-dark-blue);
+  font-weight: 700;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.logo-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-right img {
+  height: 60px;
+}
+
+/* --- Main Navigation --- */
+.ndma-nav-container {
+  background-color: white;
+  border-top: 1px solid var(--ndma-border);
+  border-bottom: 2px solid var(--ndma-dark-blue);
+}
+
+.ndma-nav {
+  display: flex;
+  padding: 0 5%;
+  align-items: center;
+  gap: 25px;
+  height: 45px;
+}
+
+.ndma-nav a {
+  text-decoration: none;
+  color: var(--ndma-text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ndma-nav a:hover {
+  color: var(--ndma-light-blue);
+}
+
+.ndma-nav .login-btn-nav {
+  margin-left: auto;
+  background-color: var(--ndma-dark-blue);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.ndma-nav .login-btn-nav:hover {
+  background-color: var(--ndma-light-blue);
+}
+
+/* --- Hero Banner Section --- */
+.ndma-hero {
+  position: relative;
+  height: 450px;
+  background: url('https://images.news18.com/ibnlive/uploads/2023/12/chennai-rain-cyclone-michaung-updates-2023-12-72be5ff2bf0fc193b289a0be1167868c-16x9.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ndma-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-left-box {
+  position: relative;
+  z-index: 10;
+  margin-left: 5%;
+  background: rgba(35, 101, 163, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 550px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  color: var(--ndma-yellow);
+}
+
+.hero-left-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons button {
+  background: white;
+  color: var(--ndma-dark-blue);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.hero-buttons button:hover {
+  background: var(--ndma-yellow);
+  color: var(--ndma-dark-blue);
+}
+
+.hero-right-angled {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  bottom: -50px;
+  width: 45%;
+  background-color: var(--ndma-dark-blue);
+  transform: skewX(-30deg);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+}
+
+.hero-right-content {
+  transform: skewX(30deg);
+  color: white;
+  padding: 0 40px;
+}
+
+.hero-right-content h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* --- Alerts Ticker --- */
+.ndma-alerts-bar {
+  display: flex;
+  background-color: #0d2745;
+  height: 50px;
+  align-items: center;
+}
+
+.alerts-label {
+  background-color: transparent;
+  color: white;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.alerts-view-all {
+  background-color: white;
+  color: #0d2745;
+  border: none;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.alerts-marquee {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.alert-item {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 30px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.alert-yellow {
+  background-color: var(--ndma-yellow);
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.alert-black {
+  background-color: #222;
+  color: var(--ndma-yellow);
+}
+
+/* --- Content Sections (AlertGov Specific) --- */
+.ndma-section {
+  padding: 5rem 5%;
+  background-color: white;
+}
+
+.ndma-section.grey-bg {
+  background-color: var(--ndma-bg-grey);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.ndma-section-title {
+  color: var(--ndma-dark-blue);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Hierarchy / Tiers Grid */
+.tiers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tier-card {
+  display: flex;
+  background: white;
+  border: 1px solid var(--ndma-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.tier-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.tier-prefix {
+  background-color: var(--ndma-dark-blue);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+}
+
+.tier-prefix span.num {
+  font-size: 1.2rem;
+  color: var(--ndma-yellow);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tier-prefix h3 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.tier-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tier-content h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: var(--ndma-light-blue);
+}
+
+.tier-content p {
+  margin: 0;
+  color: #444;
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.feature-box {
+  background: white;
+  border-top: 4px solid var(--ndma-light-blue);
+  padding: 2.5rem 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.feature-box h3 {
+  color: var(--ndma-dark-blue);
+  font-size: 1.4rem;
+  margin: 0 0 15px 0;
+}
+
+.feature-box p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bottom CTA */
+.cta-section {
+  text-align: center;
+  padding: 5rem 5%;
+  background-color: var(--ndma-dark-blue);
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--ndma-yellow);
+}
+
+.cta-button {
+  background: white;
+  color: var(--ndma-dark-blue);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 2rem;
+}
+
+.cta-button:hover {
+  background: var(--ndma-yellow);
+}
+
+/* Footer (NIC Style) */
+.nic-footer {
+  background-color: #1e1e1e;
+  color: #d1d1d1;
+  font-size: 0.9rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 5%;
+  gap: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-col h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--ndma-yellow);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.links-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.links-grid ul, .helpline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-grid li {
+  margin-bottom: 0.8rem;
+}
+
+.links-grid a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.links-grid a:hover {
+  color: var(--ndma-yellow);
+}
+
+.helpline-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.helpline-list span {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  width: 220px;
+}
+
+.footer-bottom {
+  padding: 2rem 5%;
+  text-align: center;
+  background-color: #111;
+}
+
+.footer-inline-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-inline-links a {
+  color: #bbb;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-inline-links a:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  right: -13px;
+  color: #555;
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0;
+  color: #999;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer-owned {
+  color: #ccc !important;
+  font-weight: bold;
+}
+
+.last-updated {
+  margin-top: 1rem !important;
+  font-weight: bold;
+}
+
+.footer-logos-text {
+  margin-top: 1.5rem;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.footer-logos-text span {
+  margin: 0 10px;
+}

@@ -1,0 +1,106 @@
+.public-page {
+  font-family: 'Noto Sans', 'Noto Sans Tamil', sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  padding: 3rem 10%;
+}
+
+.public-header {
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #1C4E80;
+  padding-bottom: 1rem;
+}
+
+.public-header a {
+  text-decoration: none;
+  color: #1C4E80;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.public-header a:hover {
+  opacity: 0.8;
+}
+
+.public-header h1 {
+  color: #1C4E80;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.public-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.public-content h2 {
+  color: #2365A3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.public-content h2:first-child {
+  margin-top: 0;
+}
+
+.public-content h3 {
+  color: #1C4E80;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.public-content p {
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.feedback-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.feedback-form input, .feedback-form textarea {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.feedback-form input:focus, .feedback-form textarea:focus {
+  outline: none;
+  border-color: #2365A3;
+  box-shadow: 0 0 5px rgba(35, 101, 163, 0.2);
+}
+
+.feedback-form button {
+  background: #1C4E80;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.feedback-form button:hover {
+  background: #14385e;
+}
