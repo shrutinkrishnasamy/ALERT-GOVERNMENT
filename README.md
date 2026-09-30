@@ -1,6 +1,6 @@
 # 🚨 ALERT-GOVERNMENT
 
-An AI-powered Government Emergency Alert Management System designed to help government authorities send **location-based emergency alerts** quickly and efficiently through mobile networks.
+An AI-Based Local Language Emergency Instruction Generator designed to help government authorities send **location-based emergency alerts** quickly and efficiently through mobile networks.
 
 The system enables officials at different administrative levels (VAO, Taluk, District, Collectorate) to create, review, approve, and broadcast multilingual emergency alerts to citizens in affected areas.
 
